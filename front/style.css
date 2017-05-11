@@ -1,5 +1,21 @@
 body {
-    background-color: grey;
-    color: #d0e5ec;
+    background-color: #e2e2e2;
+    color: #91a1a8;
     text-align: center;
+}
+
+div{
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 50%;
+    margin:auto;
+}
+
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #91a1a8;
 }
