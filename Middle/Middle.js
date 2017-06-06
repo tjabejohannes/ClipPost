@@ -5,12 +5,10 @@
 
 function addNewClipboardlink() {
     console.log("hallo");
-    $('#Column').append('<div class="Box"><div class="RightColumn"><button class="edit">Edit</button><div class="addtoclipboard" id="addtoclipboardButton"><button class="add">Add</button></div></div><div class="LeftColumn"> The Name </div></div>');
+    $('#Column').append('<div class="Box"><div class="RightColumn"><button class="edit">Edit</button><div class="addtoclipboard" id="addtoclipboardButton"><button class="add">Add</button></div></div><input id="nameinput"> </div></div>');
 };
 
 $( document ).ready(function() {
     new Clipboard('.btn');
     console.log( "ready!" );
 });
-
-
