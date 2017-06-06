@@ -1,5 +1,8 @@
 {
-  "name"    : "velectron",
-  "version" : "0.0.1",
-  "main"    : "main.js"
+  "name": "velectron",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "clipboard": "^1.7.1"
+  }
 }

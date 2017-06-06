@@ -9,5 +9,8 @@ function addNewClipboardlink() {
 };
 
 $( document ).ready(function() {
+    new Clipboard('.btn');
     console.log( "ready!" );
 });
+
+

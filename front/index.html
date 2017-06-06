@@ -7,7 +7,8 @@
     <link rel = "stylesheet"  href="style.css" />
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="Button.js"></script>
+    <script src="../Middle/Middle.js"></script>
+    <script src="../back/node_modules/clipboard/dist/clipboard.min.js"></script>
     <script>if (window.module) module = window.module;</script>
 </head>
 <body>
@@ -24,9 +25,7 @@
         <div id="LeftColumnHeader">Name</div>
     </div>
     <div id="Column">
-
     </div>
-
 </div>
 
 
@@ -34,6 +33,10 @@
 <div>
     <button onclick="addNewClipboardlink()">Add New Clipboard link</button>
 </div>
+
+<button class="btn" data-clipboard-text="TOR ODINSON Son of Durin son of Thorin son of Nain son of Grór son of Dáin I and so forth.....">
+    Copy to clipboard
+</button>
 <!--
 <div class="divbox">
     Electron fikser "nodemon" funsjonen automatisk.<br />
