@@ -9,6 +9,9 @@ First electron app, so beware this is most likely not a perfect implementation o
 - [ ] Add remove clickboard link functionality
 - [ ] Adding "new table row" functionality
 - [ ] Implement the clipboard functionality into the table
+- [ ] Add a some space stuff (Write to (/Read from) file or something)
+- [ ] Testing Durability  
+- [ ] Testing longevity 
 - [ ] Make a better readme :P
 - [ ] Add Emoji support to markdown
 
