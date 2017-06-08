@@ -30,7 +30,7 @@ h1{
 
 #clearall{
     float: right;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.45);
     height: 100%;
     border: unset;
 }
