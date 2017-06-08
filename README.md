@@ -5,11 +5,14 @@ First electron app, so beware this is most likely not a perfect implementation o
 - [X] Make electron run
 - [X] Structure basic Front Back End
 - [X] Addclipboard functionality
-- [ ] Create a well structured table
-- [ ] Add remove clickboard link functionality
+- [X] Create a well structured table
+- [ ] Add clickboard link functionality
 - [ ] Adding "new table row" functionality
 - [ ] Implement the clipboard functionality into the table
-- [ ] Add a some space stuff (Write to (/Read from) file or something)
+- [ ] Write to (/Read from) file functionality
+- [ ] Save functionality
+- [ ] Trigger Save on edit
+- [ ] (On request) Save on Exit functionality
 - [ ] Testing Durability  
 - [ ] Testing longevity 
 - [ ] Make a better readme :P

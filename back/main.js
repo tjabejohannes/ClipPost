@@ -5,7 +5,8 @@
 
 
 const {app, BrowserWindow} = require('electron')
-const path = require('path')
+const path = require('path');
+const Store = require('./store.js');
 const url = require('url')
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -22,6 +23,19 @@ function createWindow () {
         protocol: 'file:',
         slashes: true
     }))
+
+
+    win.on('resize', () => {
+        // The event doesn't pass us the window size, so we call the `getBounds` method which returns an object with
+        // the height, width, and x and y coordinates.
+        let { width, height } = win.getBounds();
+        console.log("trying to store on resize");
+        // Now that we have them, save them using the `set` method.
+        store.set('windowBounds', { width, height });
+
+
+    });
+
 
     // Open the DevTools.
     win.webContents.openDevTools()
@@ -48,8 +62,8 @@ app.on('window-all-closed', () => {
     // to stay active until the user quits explicitly with Cmd + Q
     if (process.platform !== 'darwin') {
     app.quit()
-}
-})
+    }
+});
 
 app.on('activate', () => {
     // On macOS it's common to re-create a window in the app when the
@@ -57,7 +71,18 @@ app.on('activate', () => {
     if (win === null) {
     createWindow()
 }
-})
+});
+
+// First instantiate the class
+const store = new Store({
+    // We'll call our data file 'user-preferences'
+    configName: 'user-preferences',
+    defaults: {
+        // 800x600 is the default size of our window
+        windowBounds: { width: 800, height: 600 }
+    }
+});
+
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
