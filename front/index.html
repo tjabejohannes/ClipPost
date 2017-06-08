@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Clip N Post 😃</title>
+    <title>ClipPost 😃</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
@@ -19,18 +19,22 @@
     <script>if (window.module) module = window.module;</script>
 </head>
 <body>
-<h1>Clip N Post</h1>
+<h1>ClipPost</h1>
 <div id="MainWindow">
     <div id="Column">
         <!-- Here the Boxes get added! -->
     </div>
-    <button onclick="addNewline()" id="newLineButton" class="btn">New line</button>
+    <button onclick="addNewEmptyline()" id="newLineButton" class="btn">New line</button>
     <button onclick="save()" id="saveButton" class="btn"> Save</button>
-    <button onclick="retrieve()" id="retreveButton" class="btn"> Retrieve</button>
+    <button onclick="addSavedLines()" id="restoreButton" class="btn"> Restore </button>
 </div>
 
 <footer>
     <p id="footerText"> Enjoy! 😃</p>
 </footer>
+
+<!-- Is not good form to do it here, but this loades the last saved Boxes into the MainWindow. -->
+<script>addSavedLines()</script>
+
 </body>
 </html>

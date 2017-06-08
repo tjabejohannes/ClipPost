@@ -32,15 +32,16 @@ h1{
     margin: 1%;
 }
 
+#restoreButton{
+    background-color: #91a1a8;
+    margin: 1%;
+}
+
 #newLineButton{
     background-color: #91a1a8;
     margin: 1%;
 }
 
-#retreveButton{
-    background-color: #91a1a8;
-    margin: 1%;
-}
 
 
 .inputstyle{

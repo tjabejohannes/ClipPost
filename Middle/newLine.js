@@ -4,6 +4,17 @@
 
 
 
-function addNewline() {
+function addLine(value) {
+    $('#Column').append('<div class ="box"><input id="input" class="inputstyle" value='+value+'><button class="btn" data-clipboard-target="#input">Clip </button> </div>');
+};
+
+function addNewEmptyline() {
     $('#Column').append('<div class ="box"><input id="input" class="inputstyle"><button class="btn" data-clipboard-target="#input">Clip </button> </div>');
 };
+
+function addSavedLines(){
+    stringArray = retrieve();
+    for (i = 0; i<stringArray.length; i++){
+        addLine(stringArray[i]);
+    }
+}

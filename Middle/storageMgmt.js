@@ -14,13 +14,19 @@ function save() {
     for(i = 0; i < all.length; i++){
         values[i] = {input: all[i].value};
     }
-    console.log(values)
     store.set('input', values);
 }
 
 function retrieve(){
-    text = store.get('input');
-    console.log(text);
+    obj = store.get('input');
+    values = [];
+    var array = Object.values(obj);
+    var stringArray = [array.length];
+
+    for (i = 0; i<array.length; i++){
+        stringArray[i] = array[i].input;
+    }
+    return stringArray
 }
 
 

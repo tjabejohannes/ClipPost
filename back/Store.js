@@ -14,16 +14,21 @@ class Store {
         const userDataPath = (electron.app || electron.remote.app).getPath('userData');
         // We'll use the `configName` property to set the file name and path.join to bring it all together as a string
         this.path = path.join(userDataPath, 'Storage.json');
-        console.log("The data is saved in following path: "+userDataPath);
+        console.log("The data is saved in following path: " + userDataPath);
         this.data = parseDataFile(this.path, opts.defaults);
     }
 
     // This will just return the property on the `data` object
     get(key) {
-        return this.data[key];
+        try{
+            console.log("read from file");
+            return this.data[key];
+        }catch (error){
+            console.log("Error while trying to fetch data from file.")
+        }
     }
 
-    // This overwrites the entire file:
+    // Overwrites the entire file:
     set(key, val) {
         this.data[key] = val;
 
@@ -35,18 +40,16 @@ class Store {
         }
     }
 
+    //Does not overwrite: (append)
     add(key, val) {
         this.data[key] = val;
 
         try {
-            //Methods that does not overwrite: (append)
-
             //Asynchronously:
             fs.appendFile(this.path, JSON.stringify(this.data), function (err) {
                 if (err) throw err;
                 console.log('Saved!');
             });
-
 
             /*
              //The Synchronously couonterpart:
