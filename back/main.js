@@ -6,7 +6,6 @@
 
 const {app, BrowserWindow} = require('electron')
 const path = require('path');
-//const Store = require('./store.js');
 const url = require('url')
 
 // Keep a global reference of the window object, if you don't, the window will

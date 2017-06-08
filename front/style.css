@@ -12,6 +12,9 @@ body {
     margin:auto;
 }*/
 
+h1{
+    margin-bottom: 3%;
+}
 
 #mainwindow{
     width: 100%;
@@ -27,6 +30,15 @@ body {
     border: dashed #91a1a8;
 }
 
+#saveButton{
+    background-color: #91a1a8;
+    margin: 1%;
+}
+
+#newLineButton{
+    background-color: #91a1a8;
+    margin: 1%;
+}
 
 
 .inputstyle{
@@ -42,7 +54,7 @@ body {
 .box{
     width: 100%;
     height: 30px;
-    background-color: #80848b;
+    background-color: #91a1a8;
     margin-bottom: 1.5%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -134,17 +146,17 @@ footer {
     float: unset;
     flood-color: unset;
     flood-opacity: unset;
-    font-family: unset;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
     font-feature-settings: unset;
     font-kerning: unset;
     font-language-override: unset;
     font-size-adjust: unset;
     font-size: unset;
     font-stretch: unset;
-    font-style: oblique;
+    font-style: normal;
     font-synthesis: unset;
-    font-variant: unset;
-    font-weight: unset;
+    font-variant: normal;
+    font-weight: 500;
     force-broken-image-icon: unset;
     height: 30px;
     hyphens: unset;
