@@ -6,7 +6,7 @@
 
 const {app, BrowserWindow} = require('electron')
 const path = require('path');
-const Store = require('./store.js');
+//const Store = require('./store.js');
 const url = require('url')
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -15,7 +15,7 @@ let win
 
 function createWindow () {
     // Create the browser window.
-    win = new BrowserWindow({width: 800, height: 600})
+    win = new BrowserWindow({width: 1000, height: 600})
 
     // and load the index.html of the app.
     win.loadURL(url.format({
@@ -24,21 +24,8 @@ function createWindow () {
         slashes: true
     }))
 
-
-    win.on('resize', () => {
-        // The event doesn't pass us the window size, so we call the `getBounds` method which returns an object with
-        // the height, width, and x and y coordinates.
-        let { width, height } = win.getBounds();
-        console.log("trying to store on resize");
-        // Now that we have them, save them using the `set` method.
-        store.set('windowBounds', { width, height });
-
-
-    });
-
-
     // Open the DevTools.
-    win.webContents.openDevTools()
+    win.webContents.openDevTools();
 
     // Emitted when the window is closed.
     win.on('closed', () => {
@@ -73,15 +60,6 @@ app.on('activate', () => {
 }
 });
 
-// First instantiate the class
-const store = new Store({
-    // We'll call our data file 'user-preferences'
-    configName: 'user-preferences',
-    defaults: {
-        // 800x600 is the default size of our window
-        windowBounds: { width: 800, height: 600 }
-    }
-});
 
 
 // In this file you can include the rest of your app's specific main process
