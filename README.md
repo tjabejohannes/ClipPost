@@ -10,11 +10,11 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 - [X] Adding "new table row" functionality
 - [X] Add clickboard link functionality
 - [X] Write to file functionality
-- [ ] Read from file functionality
+- [X] Read from file functionality
 - [X] Implement the "Write to file" so that all the elements from the table get saved.
-- [ ] Implement the "Read from file" functionality into the table
-- [ ] Implement the clipboard functionality into the table
-- [ ] Save functionality
+- [X] Implement the "Read from file" functionality into the table
+- [X] Implement the clipboard functionality into the table
+- [X] Save functionality
 - [ ] Trigger Save on edit
 - [ ] (On request) Save on Exit functionality
 - [ ] Testing Durability  

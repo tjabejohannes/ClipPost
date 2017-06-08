@@ -3,7 +3,13 @@
  */
 
 $( document ).ready(function() {
-    var clipboard = new Clipboard('.btn');
+    var clipboard = new Clipboard('.btn', {
+        target: function(trigger) {
+            var valueArray = $(trigger).parent().find('input');
+            var value = valueArray[0];
+            return value;
+        }
+    });
 
 
     clipboard.on('success', function(e) {
@@ -23,6 +29,3 @@ $( document ).ready(function() {
 });
 
 
-
-
-//<div class="Box"><div class="RightColumn"><button class="edit">Edit</button><div class="addtoclipboard" id="addtoclipboardButton"><button class="add">Add</button></div></div><input id="nameinput"> </div></div>

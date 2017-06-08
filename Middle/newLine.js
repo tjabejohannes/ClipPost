@@ -5,11 +5,11 @@
 
 
 function addLine(value) {
-    $('#Column').append('<div class ="box"><input id="input" class="inputstyle" value='+value+'><button class="btn" data-clipboard-target="#input">Clip </button> </div>');
+    $('#Column').append('<div class ="box"><input id="input" class="inputstyle" value='+value+'><button class="btn">Clip </button> </div>');
 };
 
 function addNewEmptyline() {
-    $('#Column').append('<div class ="box"><input id="input" class="inputstyle"><button class="btn" data-clipboard-target="#input">Clip </button> </div>');
+    $('#Column').append('<div class ="box"><input id="input" class="inputstyle"><button class="btn">Clip </button> </div>');
 };
 
 function addSavedLines(){
