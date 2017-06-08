@@ -19,10 +19,11 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 - [ ] (On request) Save on Exit functionality
 - [ ] Adding modal (user feadback)
 - [ ] Document code
+- [ ] Make Executable for ease of use
 - [ ] Testing Durability  
 - [ ] Testing longevity 
 - [ ] Make a better readme :P
-- [ ] Add Emoji support to markdown
+- [ ] Add Emoji support to markdown (This is a joke)
 
 
 
