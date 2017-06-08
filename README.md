@@ -1,15 +1,19 @@
-# selectron
-First electron app, so beware this is most likely not a perfect implementation of such
+# ClipPost
+ClipPost is a application that makes using the clippboard on your computer as efficient as passible.
+This is our first electron app, so beware, this is most likely not a perfect implementation of such tool.
 
 ## TODO
 - [X] Make electron run
 - [X] Structure basic Front Back End
 - [X] Addclipboard functionality
 - [X] Create a well structured table
-- [ ] Add clickboard link functionality
-- [ ] Adding "new table row" functionality
+- [X] Adding "new table row" functionality
+- [X] Add clickboard link functionality
+- [X] Write to file functionality
+- [ ] Read from file functionality
+- [ ] Implement the "Write to file" functionality into the table
+- [ ] Implement the "Read from file" functionality into the table
 - [ ] Implement the clipboard functionality into the table
-- [ ] Write to (/Read from) file functionality
 - [ ] Save functionality
 - [ ] Trigger Save on edit
 - [ ] (On request) Save on Exit functionality
