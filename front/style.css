@@ -1,19 +1,16 @@
 body {
     background-color: #e2e2e2;
-    color: #91a1a8;
+    color: white;
     text-align: center;
 }
 
-/*div{
-    background-color: white;
-    color: black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 50%;
-    margin:auto;
-}*/
-
 h1{
     margin-bottom: 3%;
+    color: #91a1a8;
+}
+
+#footerText{
+    margin-top: 5px;
 }
 
 #mainwindow{
@@ -40,6 +37,11 @@ h1{
     margin: 1%;
 }
 
+#retreveButton{
+    background-color: #91a1a8;
+    margin: 1%;
+}
+
 
 .inputstyle{
     background-color: rgba(0, 224, 224, 0.69);
@@ -62,7 +64,7 @@ h1{
 
 footer {
     position: fixed;
-    height: 25px;
+    height: 30px;
     bottom: 0;
     width: 100%;
     background-color: #91a1a8;
@@ -76,6 +78,14 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .box{
+        width: 100%;
+        height: 30px;
+        background-color: #91a1a8;
+        margin-bottom: 1.5%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
 }
 
 
@@ -85,7 +95,7 @@ footer {
 }
 
 
-
+/* Because the clipboard package has a styling that can easily be unset (reverted to the standard) this has to happen. Unless you figure it out. */
 .btn{
     align-content: unset;
     align-items: unset;

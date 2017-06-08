@@ -33,14 +33,24 @@ class Store {
 
         try{
 
+            //Method that overwrites the entire file:
+            fs.writeFileSync(this.path, JSON.stringify(this.data));
+            console.log('Saved!');
+
+
+            //Methods that does not overwrite: (append)
+            /*
             //Asynchronously:
             fs.appendFile(this.path, JSON.stringify(this.data), function (err) {
                 if (err) throw err;
                 console.log('Saved!');
             });
+            */
 
+            /*
             //The Synchronously couonterpart:
-            //fs.appendFileSync('message.txt', 'data to append');
+            fs.appendFileSync('message.txt', 'data to append');
+            */
         } catch (error){
             console.log(error);
         }
@@ -54,7 +64,7 @@ function parseDataFile(filePath, defaults) {
         return JSON.parse(fs.readFileSync(filePath));
     } catch(error) {
         // if there was some kind of error, return the passed in defaults instead.
-        console.log("error");
+        console.log("Setting default since no exciting jason object.");
         return defaults;
     }
 }

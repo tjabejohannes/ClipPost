@@ -12,6 +12,11 @@ function save() {
     store.set('input', {input});
 }
 
+function retrieve(){
+    text = store.get('input');;
+    console.log(text);
+}
+
 
 // First instantiate the class
 const store = new Store({
