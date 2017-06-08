@@ -3,17 +3,23 @@
  */
 
 
-const path = require('path');
+//const path = require('path');
 const Store = require('../back/store.js');
 
 
 function save() {
-    let input = document.getElementById("input").value;
-    store.set('input', {input});
+    var all = document.getElementsByClassName('inputstyle');
+    var values = {};
+
+    for(i = 0; i < all.length; i++){
+        values[i] = {input: all[i].value};
+    }
+    console.log(values)
+    store.set('input', values);
 }
 
 function retrieve(){
-    text = store.get('input');;
+    text = store.get('input');
     console.log(text);
 }
 

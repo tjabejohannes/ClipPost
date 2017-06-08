@@ -11,7 +11,7 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 - [X] Add clickboard link functionality
 - [X] Write to file functionality
 - [ ] Read from file functionality
-- [ ] Implement the "Write to file" so that all the elements from the table get saved.
+- [X] Implement the "Write to file" so that all the elements from the table get saved.
 - [ ] Implement the "Read from file" functionality into the table
 - [ ] Implement the clipboard functionality into the table
 - [ ] Save functionality
