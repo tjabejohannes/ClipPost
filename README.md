@@ -17,6 +17,8 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 - [X] Save functionality
 - [ ] Trigger Save on edit
 - [ ] (On request) Save on Exit functionality
+- [ ] Adding modal (user feadback)
+- [ ] Document code
 - [ ] Testing Durability  
 - [ ] Testing longevity 
 - [ ] Make a better readme :P
