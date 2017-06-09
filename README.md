@@ -28,12 +28,12 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 
 ## Example
 
-![alt text](velectron/front/Example.png)
+![alt text](velectron/front/Example.png?raw=true)
 
 
 ## Installation
 
-- install [electron] (https://www.npmjs.com/package/electron.png?raw=true )
+- install [electron] (https://www.npmjs.com/package/electron )
 
 - clone repo
 
