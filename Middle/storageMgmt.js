@@ -9,7 +9,6 @@ const Store = require('../back/store.js');
 
 function save() {
     var all = document.getElementsByClassName('inputstyle');
-    console.log(all);
     write(all);
 }
 

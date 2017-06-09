@@ -36,6 +36,18 @@ function createWindow() {
 
 }
 
+//Just for test purposes.
+function createChildWindow(){
+    child = new BrowserWindow({parent: win});
+
+    win.loadURL(url.format({
+        pathname: path.join(__dirname, '/../front/index.html'),
+        protocol: 'file:',
+        slashes: true
+    }));
+
+}
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -43,10 +55,8 @@ function createWindow() {
 app.on('ready', () => {
 
     createWindow();
-    // Register a 'CommandOrControl+Y' shortcut listener.
-    globalShortcut.register('CommandOrControl+Y', () => {
-        // Do stuff when Y and either Command/Control is pressed.
-        console.log("You pressed ether command or Control and Y");
+    globalShortcut.register('CommandOrControl+S', () => {
+        console.log("You pressed ether command or Control and S");
     })
 });
 
