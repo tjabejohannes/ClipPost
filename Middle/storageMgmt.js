@@ -55,6 +55,9 @@ function retrieve() {
 
 
 function clearAll() {
+    //The following Jquary does not work on another file.
+    $("div").remove(".box");
+
     var empty = {};
     write(empty);
     hideModal();
