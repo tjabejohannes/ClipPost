@@ -26,11 +26,6 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 - [ ] Make a better readme :P
 - [ ] Add Emoji support to markdown (This is a joke)
 
-## Example
-
-![ScreenShot](https://raw.githubusercontent.com/tjabejohannes/velectron/master/front/Example.png)
-
-
 ## Installation
 
 - install [electron] (https://www.npmjs.com/package/electron )
@@ -38,3 +33,8 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 - clone repo
 
 - Run the command "electron ." in the folder named "back"
+
+## Preview
+
+![ScreenShot](https://raw.githubusercontent.com/tjabejohannes/velectron/master/front/Example.png)
+
