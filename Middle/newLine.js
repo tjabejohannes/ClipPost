@@ -5,7 +5,7 @@
 
 
 function addLine(value) {
-    $('#Column').append('<div class ="box"><input id="input" class="inputstyle" value='+value+'><button class="btn">Clip </button> </div>');
+    $('#Column').append('<div class ="box"><input id="input" class="inputstyle" value="'+value+'"><button class="btn">Clip </button> </div>');
 };
 
 function addNewEmptyline() {
