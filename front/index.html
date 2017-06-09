@@ -18,14 +18,17 @@
     <script>if (window.module) module = window.module;</script>
 </head>
 <body>
+<div id="dragbar">  ___</div>
 <h1>ClipPost</h1>
 <div id="MainWindow">
     <div id="Column">
         <script>addSavedLines()</script>
         <!-- Here the Boxes get added! -->
     </div>
-    <button onclick="addNewEmptyline()" class="btn2">New line</button>
-    <button onclick="save()"  class="btn2"> Save</button>
+    <div id="buttons">
+        <button onclick="addNewEmptyline()" class="btn2">New line</button>
+        <button onclick="save()"  class="btn2"> Save</button>
+    </div>
 </div>
 
 <footer>

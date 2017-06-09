@@ -12,13 +12,12 @@ function showModal() {
     modal = new remote.BrowserWindow({
         parent: remote.getCurrentWindow(),
         modal: true,
-        height: 150,
-        width: 650
+        height: 120,
+        width: 450,
+        backgroundColor: '#c4dfe6'
     });
 
     var theUrl = 'file://' + __dirname + '/modal.html'
-    console.log('url', theUrl);
-
     modal.loadURL(theUrl);
 }
 
