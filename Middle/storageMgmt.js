@@ -2,10 +2,29 @@
  * Created by LittleGpNator on 08/06/2017.
  */
 
-
 //const path = require('path');
 const Store = require('../back/store.js');
 
+const { remote } = require('electron');
+
+let modal;
+function showModal() {
+    modal = new remote.BrowserWindow({
+        parent: remote.getCurrentWindow(),
+        modal: true,
+        height: 150,
+        width: 650
+    });
+
+    var theUrl = 'file://' + __dirname + '/modal.html'
+    console.log('url', theUrl);
+
+    modal.loadURL(theUrl);
+}
+
+function hideModal() {
+    remote.getCurrentWindow().hide();
+}
 
 function save() {
     var all = document.getElementsByClassName('inputstyle');
@@ -33,10 +52,12 @@ function retrieve() {
     return stringArray
 }
 
+
+
 function clearAll() {
     var empty = {};
     write(empty);
-    $("div").remove(".box");
+    hideModal();
 }
 
 

@@ -10,6 +10,8 @@ function addLine(value) {
 
 function addNewEmptyline() {
     $('#Column').append('<div class ="box"><input id="input" class="inputstyle"><button class="btn">Clip </button> </div>');
+    var objDiv = document.getElementById("Column");
+    objDiv.scrollTop = objDiv.scrollHeight;
 };
 
 function addSavedLines(){

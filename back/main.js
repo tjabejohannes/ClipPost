@@ -14,7 +14,7 @@ let win;
 
 function createWindow() {
     // Create the browser window.
-    win = new BrowserWindow({width: 800, height: 600});//, titleBarStyle: 'hidden-inset'});
+    win = new BrowserWindow({width: 800, height: 600, titleBarStyle: 'hidden-inset'});
 
     // and load the index.html of the app.
     win.loadURL(url.format({
@@ -24,7 +24,7 @@ function createWindow() {
     }));
 
     // Open the DevTools.
-    win.webContents.openDevTools();
+    //win.webContents.openDevTools();
 
     // Emitted when the window is closed.
     win.on('closed', () => {
@@ -36,18 +36,6 @@ function createWindow() {
 
 }
 
-//Just for test purposes.
-function createChildWindow(){
-    child = new BrowserWindow({parent: win});
-
-    win.loadURL(url.format({
-        pathname: path.join(__dirname, '/../front/index.html'),
-        protocol: 'file:',
-        slashes: true
-    }));
-
-}
-
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -55,6 +43,8 @@ function createChildWindow(){
 app.on('ready', () => {
 
     createWindow();
+
+    //trigger save in storageMgmt
     globalShortcut.register('CommandOrControl+S', () => {
         console.log("You pressed ether command or Control and S");
     })

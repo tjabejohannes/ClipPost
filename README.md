@@ -17,7 +17,8 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 - [X] Save functionality
 - [ ] Trigger Save on edit
 - [ ] (On request) Save on Exit functionality
-- [ ] Adding modal (user feadback)
+- [X] Adding modal (user feadback)
+- [ ] Refreshing table in "clearAll"
 - [ ] Document code
 - [ ] Make Executable for ease of use
 - [ ] Testing Durability  
