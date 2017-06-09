@@ -28,7 +28,7 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 
 ## Example
 
-![alt text](velectron/front/Example.png?raw=true)
+![ScreenShot](https://raw.githubusercontent.com/tjabejohannes/velectron/master/front/Example.png)
 
 
 ## Installation
