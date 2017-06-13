@@ -38,6 +38,10 @@ function autoSave() {
     }
 }
 
+function cleanFile() {
+    store.set('input',{"0":{input: ""}});
+}
+
 function write(all) {
     var values = {};
 
@@ -65,8 +69,7 @@ function clearAll() {
     //The following Jquary does not work on another file.
     $("div").remove(".box");
 
-    var empty = {};
-    write(empty);
+    cleanFile()
     hideModal();
 }
 
