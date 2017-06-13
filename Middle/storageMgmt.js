@@ -8,6 +8,8 @@ const Store = require('../back/store.js');
 const { remote } = require('electron');
 
 let modal;
+var autosave=false;
+
 function showModal() {
     modal = new remote.BrowserWindow({
         parent: remote.getCurrentWindow(),
@@ -26,8 +28,14 @@ function hideModal() {
 }
 
 function save() {
-    var all = document.getElementsByClassName('inputstyle');
+    var all = document.getElementsByClassName('inputField');
     write(all);
+}
+
+function autoSave() {
+    if (autosave===true){
+        save()
+    }
 }
 
 function write(all) {
@@ -71,3 +79,12 @@ const store = new Store({
         input: {input: "input"}
     }
 });
+
+function setAutoSave() {
+    if (autosave){
+        autosave=false;
+    }else{
+        autosave=true;
+    }
+    console.log(autosave);
+}

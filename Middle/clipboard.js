@@ -17,6 +17,11 @@ $( document ).ready(function() {
         console.info('Text:', e.text);
         //console.info('Trigger:', e.trigger);
 
+
+        //Triggers save if autoSafe is "on"
+        autoSave();
+
+
         e.clearSelection();
     });
 

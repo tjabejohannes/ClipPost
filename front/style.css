@@ -50,19 +50,18 @@ h2 {
 }
 
 #buttons {
-    margin-bottom: 30px;
+    margin-bottom: 5%;
 }
 
 #mainwindow {
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
 
 #Column {
     background-color: #c4dfe6;
     overflow-y: scroll;
-    height: 1000px;
-    width: 100%;
+    height: 70vh;
     margin-bottom: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: dashed #003b46;
@@ -75,7 +74,7 @@ h2 {
     border: unset;
 }
 
-.inputstyle {
+.inputField {
     background-color: #66a5ad;
     width: 80%;
     height: 30px;
@@ -153,13 +152,14 @@ footer {
 @media screen and (min-aspect-ratio: 2/3) {
 
     #MainWindow {
-        width: 80%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
 
     #Column {
-        height: 370px;
+        height:60vh;
+        width: 100%;
     }
 
     .box {
