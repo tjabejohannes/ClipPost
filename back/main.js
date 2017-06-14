@@ -18,8 +18,8 @@ function createWindow() {
     win = new BrowserWindow({
         width: 800,
         height: 600,
-        minWidth: 280,
-        minHeight: 400,
+        minWidth: 330,
+        minHeight: 580,
         titleBarStyle: 'hidden-inset',
         show: false
     });

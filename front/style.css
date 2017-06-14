@@ -149,7 +149,7 @@ footer {
     color: #464646;
 }
 
-@media screen and (min-aspect-ratio: 2/3) {
+@media screen and (min-aspect-ratio: 8/10) {
 
     #MainWindow {
         width: 70%;
