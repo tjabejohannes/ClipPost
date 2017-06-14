@@ -15,16 +15,15 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 - [X] Implement the "Read from file" functionality into the table
 - [X] Implement the clipboard functionality into the table
 - [X] Save functionality
-- [ ] Trigger Save on edit
+- [X] Save on copy
 - [ ] (On request) Save on Exit functionality
-- [X] Adding modal (user feadback)
-- [ ] Refreshing table in "clearAll"
+- [X] Add modal (user feadback)
+- [X] Add communication between windows (IPC).
+- [X] Refreshing table after "clearAll"-press
 - [ ] Document code
 - [ ] Make Executable for ease of use
 - [ ] Testing Durability  
 - [ ] Testing longevity 
-- [ ] Make a better readme :P
-- [ ] Add Emoji support to markdown (This is a joke)
 
 ## Installation
 
