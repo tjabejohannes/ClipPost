@@ -79,6 +79,8 @@ app.on('activate', () => {
     }
 });
 
+//IPC communication between windows
+
 var eventMainWindow;
 
 ipcMain.on('asynchronous-message-from-modal', (event, arg) => {
@@ -90,6 +92,3 @@ ipcMain.on('asynchronous-message-from-mainWindow', (event, arg) => {
     console.log(arg);
     eventMainWindow = event;
 });
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
