@@ -14,12 +14,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../Middle/storageMgmt.js"></script>
     <script src="../Middle/newLine.js"></script>
+    <script src="../Middle/modal.js"></script>
+    <script src="../Middle/mainWindow.js"></script>
     <script src="../Middle/clipboard.js"></script>
     <script src="../back/node_modules/clipboard/dist/clipboard.min.js"></script>
     <script>if (window.module) module = window.module;</script>
 </head>
 <body>
-<div id="dragbar">  ___</div>
+<div id="dragbar"> ___</div>
 <h1>ClipPost</h1>
 <div id="MainWindow">
     <div id="Column">
@@ -28,20 +30,17 @@
     </div>
     <div id="buttons">
         <button onclick="addNewEmptyline()" class="btn2">New line</button>
-        <button onclick="save()"  class="btn2"> Save</button>
+        <button onclick="save()" class="btn2"> Save</button>
     </div>
 </div>
-
-<!-- Is not good form to do it here, but this loades the last saved Boxes into the MainWindow-->
-
 </body>
 <footer>
     <p id="footerText"></p>
-    <button onclick="showModal()" id="clearall"> Clear All</button>
+    <button onclick="showModal()" id="clearall"> Clear</button>
     <label class="switch">
         <input type="checkbox" onclick="setAutoSave()">
         <div class="slider round"></div>
     </label>
-    <p id="autoSave">Auto "onClip" save</p>
+    <p id="autoSave">Save on copy</p>
 </footer>
 </html>

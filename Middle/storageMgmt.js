@@ -5,27 +5,9 @@
 //const path = require('path');
 const Store = require('../back/store.js');
 
-const { remote } = require('electron');
 
-let modal;
 var autosave=false;
 
-function showModal() {
-    modal = new remote.BrowserWindow({
-        parent: remote.getCurrentWindow(),
-        modal: true,
-        height: 120,
-        width: 450,
-        backgroundColor: '#c4dfe6'
-    });
-
-    var theUrl = 'file://' + __dirname + '/modal.html'
-    modal.loadURL(theUrl);
-}
-
-function hideModal() {
-    remote.getCurrentWindow().hide();
-}
 
 function save() {
     var all = document.getElementsByClassName('inputField');
@@ -66,11 +48,9 @@ function retrieve() {
 
 
 function clearAll() {
-    //The following Jquary does not work on another file.
+    cleanFile();
     $("div").remove(".box");
-
-    cleanFile()
-    hideModal();
+    addSavedLines();
 }
 
 

@@ -5,11 +5,11 @@
 
 
 function addLine(value) {
-    $('#Column').append('<div class ="box"><input type="text" id="input" class="inputField" value="'+value+'"><button class="btn">Clip </button> </div>');
+    $('#Column').append('<div class ="box"><input type="text" id="input" class="inputField" value="'+value+'"><button class="btn">Copy </button> </div>');
 };
 
 function addNewEmptyline() {
-    $('#Column').append('<div class ="box"><input type="text" id="input" class="inputField"><button class="btn">Clip </button> </div>');
+    $('#Column').append('<div class ="box"><input type="text" id="input" class="inputField"><button class="btn">Copy </button> </div>');
     var objDiv = document.getElementById("Column");
     objDiv.scrollTop = objDiv.scrollHeight;
 };

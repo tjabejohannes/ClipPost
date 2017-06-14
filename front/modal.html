@@ -11,14 +11,13 @@
         module = undefined;
     }</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../back/main.js"></script>
-    <script src="../Middle/storageMgmt.js"></script>
+    <script src="../Middle/modal.js"></script>
     <script>if (window.module) module = window.module;</script>
 </head>
 <body>
 <h2>Are you shure you want to delete all entries?</h2>
 <div>
-    <button onclick="clearAll()"  class="btn3">Yes</button>
+    <button onclick="sendASync()"  class="btn3">Yes</button>
     <button onclick="hideModal()" class="btn2"> No</button>
 </div>
 </body>
