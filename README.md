@@ -35,5 +35,5 @@ This is our first electron app, so beware, this is most likely not a perfect imp
 
 ## Preview
 
-![ScreenShot](https://raw.githubusercontent.com/tjabejohannes/velectron/master/front/Example!.png)
+![ScreenShot](https://raw.githubusercontent.com/tjabejohannes/velectron/master/front/Example.png)
 
