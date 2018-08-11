@@ -3,7 +3,7 @@
  */
 
 //const path = require('path');
-const Store = require('../back/store.js');
+const Store = require('../Store.js');
 
 
 var autosave=false;

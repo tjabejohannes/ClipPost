@@ -16,8 +16,9 @@ function showModal() {
         modal: true,
         height: 120,
         width: 450,
-        resizable: true, //make it false
-        backgroundColor: '#c4dfe6'
+        resizable: false,
+        backgroundColor: '#c4dfe6',
+        frame: false
     });
 
     var theUrl = 'file://' + __dirname + '/modal.html'

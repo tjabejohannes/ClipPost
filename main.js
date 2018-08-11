@@ -21,12 +21,13 @@ function createWindow() {
         minWidth: 330,
         minHeight: 580,
         titleBarStyle: 'hidden-inset',
-        show: false
+        show: false,
+        frame: false
     });
 
     // and load the index.html of the app.
     win.loadURL(url.format({
-        pathname: path.join(__dirname, '/../front/index.html'),
+        pathname: path.join(__dirname, '/front/index.html'),
         protocol: 'file:',
         slashes: true
     }));
