@@ -21,7 +21,7 @@ This is my first electron app, so beware, this is most likely not a perfect usag
 - [X] Add communication between windows (IPC).
 - [X] Refreshing table after "clearAll"-press
 - [ ] Document code
-- [ ] Make Executable for ease of use
+- [X] Make Executable for ease of use
 - [ ] Testing Durability  
 - [ ] Testing longevity 
 
