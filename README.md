@@ -1,6 +1,5 @@
 # ClipPost
-ClipPost is a application that makes using the clipboard on your computer as efficient as passible. 
-This is my first electron app, so beware, this is most likely not a perfect usage of such tool.
+ClipPost is a application that makes using the clipboard on your computer as efficient as possible. This is my first electron app, so beware, this is most likely not a perfect usage of such tool.
 
 ## TODO
 - [X] Make electron run
